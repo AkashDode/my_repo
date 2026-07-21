@@ -1,78 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Practice - Version 2.0</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+<title>Git Practice - Version 3.0</title>
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial;
-        }
+<style>
 
-        body{
-            background:#f4f4f4;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
 
-        nav{
-            background:#2563eb;
-            color:white;
-            padding:18px;
-            text-align:center;
-        }
+body{
+background:#eef3ff;
+}
 
-        nav a{
-            color:white;
-            margin:15px;
-            text-decoration:none;
-        }
+nav{
+background:#1d4ed8;
+padding:20px;
+text-align:center;
+}
 
-        .hero{
-            text-align:center;
-            padding:80px;
-        }
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+}
 
-        .about{
-            padding:40px;
-            background:white;
-            width:80%;
-            margin:30px auto;
-            border-radius:10px;
-        }
+.hero{
+text-align:center;
+padding:70px;
+}
 
-    </style>
+button{
+padding:12px 25px;
+margin-top:20px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.features{
+display:flex;
+justify-content:center;
+gap:25px;
+margin:50px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+footer{
+background:#1d4ed8;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Features</a>
+<a href="#">Contact</a>
+
 </nav>
 
 <section class="hero">
 
-    <h1>🚀 Welcome to Git Practice</h1>
+<h1>🚀 Git Practice Project</h1>
 
-    <p>Now upgraded to Version 2.0</p>
+<p>Welcome to Version 3.0</p>
+
+<button>Learn More</button>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h2>Version 1.0</h2>
+<p>Initial webpage created.</p>
+</div>
+
+<div class="card">
+<h2>Version 2.0</h2>
+<p>Navigation and About section added.</p>
+</div>
+
+<div class="card">
+<h2>Version 3.0</h2>
+<p>Feature cards, button and footer introduced.</p>
+</div>
 
 </section>
 
-<section class="about">
+<footer>
 
-    <h2>About Version 2.0</h2>
+<p>Git Practice Project • Version 3.0</p>
 
-    <p>
-        Navigation bar added.
-        Better layout.
-        Cleaner styling.
-    </p>
-
-</section>
+</footer>
 
 </body>
 </html>
