@@ -4,70 +4,157 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Git Practice - Version 3.0</title>
+<title>Git Practice - Version 4.0</title>
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#eef3ff;
+    background:#f4f7fc;
+    color:#333;
 }
 
-nav{
-background:#1d4ed8;
-padding:20px;
-text-align:center;
+header{
+    background:#1d4ed8;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:20px;
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
 }
 
 .hero{
-text-align:center;
-padding:70px;
+    text-align:center;
+    padding:90px 20px;
+    background:linear-gradient(to right,#2563eb,#1e40af);
+    color:white;
 }
 
-button{
-padding:12px 25px;
-margin-top:20px;
-background:#2563eb;
-color:white;
-border:none;
-border-radius:6px;
-cursor:pointer;
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:white;
+    color:#1d4ed8;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#dbeafe;
 }
 
 .features{
-display:flex;
-justify-content:center;
-gap:25px;
-margin:50px;
-flex-wrap:wrap;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:60px 20px;
+
 }
 
 .card{
-background:white;
-padding:25px;
-width:250px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+
+    width:280px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h3{
+
+    color:#2563eb;
+    margin-bottom:15px;
+
+}
+
+.contact{
+
+    background:white;
+    width:80%;
+    margin:40px auto;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.contact button{
+
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+
 }
 
 footer{
-background:#1d4ed8;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+
+    margin-top:50px;
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+}
+
+nav{
+
+    margin-top:15px;
+
+}
+
+.features{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
 }
 
 </style>
@@ -76,47 +163,69 @@ margin-top:40px;
 
 <body>
 
+<header>
+
+<h2>Git Practice v4.0</h2>
+
 <nav>
 
 <a href="#">Home</a>
 <a href="#">About</a>
-<a href="#">Features</a>
+<a href="#">Services</a>
 <a href="#">Contact</a>
 
 </nav>
 
+</header>
+
 <section class="hero">
 
-<h1>🚀 Git Practice Project</h1>
+<h1>🚀 Welcome to Version 4.0</h1>
 
-<p>Welcome to Version 3.0</p>
+<p>
+This version introduces a responsive layout, service cards,
+and a contact section.
+</p>
 
-<button>Learn More</button>
+<a href="#" class="btn">Get Started</a>
 
 </section>
 
 <section class="features">
 
 <div class="card">
-<h2>Version 1.0</h2>
-<p>Initial webpage created.</p>
+<h3>🚀 Fast Development</h3>
+<p>Clean HTML and CSS structure for easy maintenance.</p>
 </div>
 
 <div class="card">
-<h2>Version 2.0</h2>
-<p>Navigation and About section added.</p>
+<h3>📱 Responsive Design</h3>
+<p>Works on desktops, tablets and mobile devices.</p>
 </div>
 
 <div class="card">
-<h2>Version 3.0</h2>
-<p>Feature cards, button and footer introduced.</p>
+<h3>💻 Git Practice</h3>
+<p>Perfect project for commits, branches, merge and rebase practice.</p>
 </div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+Interested in learning Git and Web Development?
+Let's build something amazing together.
+</p>
+
+<button>Contact Now</button>
 
 </section>
 
 <footer>
 
-<p>Git Practice Project • Version 3.0</p>
+<p>Git Practice Project | Version 4.0 | © 2026</p>
 
 </footer>
 
