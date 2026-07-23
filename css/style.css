@@ -14,10 +14,15 @@ html{
 }
 
 body{
-    background:#f5f7fb;
-    color:#222;
+
+    background:var(--bg);
+
+    color:var(--text);
+
     transition:.4s;
+
     line-height:1.6;
+
 }
 
 /* Dark Mode */
